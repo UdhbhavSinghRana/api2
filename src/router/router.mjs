@@ -8,6 +8,7 @@ router.route('/').post((req, res) => {
     const evenArr = [];
     const oddArr = [];
     const alpha = [];
+    if (data.length === 0) res.status(400).send("Send the data correctly");
 
     
     for (let i = 0; i < data.length; i++) {
