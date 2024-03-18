@@ -15,10 +15,10 @@ router.route('/').post((req, res) => {
             alpha.push(data[i].toUpperCase());
         }
         else if (parseInt(data[i]) % 2 == 0) {
-            evenArr.push(parseInt(data[i]));
+            evenArr.push(data[i]);
         } 
         else {
-            oddArr.push(parseInt(data[i]));
+            oddArr.push(data[i]);
         }
     }
 
